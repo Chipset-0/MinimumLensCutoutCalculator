@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Size Calculator</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <img src="./assets/midwest-optical-logo.png" class="logo">
+            <h3 class="description">Minimum Lens Cutout Calculator</h3>
+        </div>
+        <form id="form-minimum-frame-size">
+            <div class="input-container">
+                <label for="frame-size">Frame Size:</label>
+                <input class="value-input" type="number" id="frame-size" name="frame-size" required min="1">
+            </div>
+
+            <div class="input-container">
+                <label for="bridge">Bridge:</label>
+                <input class="value-input" type="number" id="bridge" name="bridge" required min="1">
+            </div>
+
+            <div class="input-container">
+                <label for="pd">PD:</label>
+                <input class="value-input" type="number" id="pd" name="pd" required min="1">
+            </div>
+
+            <div class="input-container">
+                <label for="ed">ED:</label>
+                <input class="value-input" type="number" id="ed" name="ed" required min="1">
+            </div>
+            <input class="button"type="submit" value="Submit">
+        </form>
+        <div class="container">
+            <div id="result-minimum-frame-size">...</div>
+            <button class="button" id="button-clear">Clear</button>
+        </div>
+    </div>
+</body>
+</html>

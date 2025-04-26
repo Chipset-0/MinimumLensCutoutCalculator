@@ -1,0 +1,89 @@
+body
+{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: grid;
+}
+
+#form-minimum-frame-size
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:16px;
+    height: 100%;
+}
+
+.logo
+{
+    width: fit-content;
+    height: fit-content;
+}
+
+.container
+{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-container
+{
+    min-height: 600px;
+    display: grid;
+    grid-template-rows: 25% 60% 15%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5% 0%;
+}
+
+.input-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: x-large;
+}
+
+.description
+{
+    text-align: center;
+}
+
+.value-input
+{
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: large;
+}
+
+.value-input:invalid
+{
+    border-bottom: 2px solid black;
+}
+
+.value-input:valid
+{
+    border-bottom: 2px solid green;
+}
+
+#result-minimum-frame-size
+{
+    font-size: x-large;
+    margin: 8px;
+    border-bottom: solid black 2px;
+}
+
+.button
+{
+    font-size: x-large;
+    border: solid black 2px;
+    border-radius: 8px;
+    padding:8px;
+}
